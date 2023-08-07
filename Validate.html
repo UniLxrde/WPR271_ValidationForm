@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Form Assignment
+    </title>
+    <script src="Script.js"></script>
+</head>
+<body>
+    <form id="WPR271Form">
+        <label for="firstName">
+            First Name : 
+        </label>
+        <input type="text" id="firstName" name="firstName" required pattern="[A-Za-z]+" title="Leters Only">
+        <br>
+
+        <label for="lastName">
+            Last Name :
+        </label>
+        <input type="text" id="lastName" name="lastName" required pattern="[A-Za-z]+" title="Leters Only">
+        <br>
+
+        <label for="userID">
+            User ID :
+        </label>
+        <input type="text" id="userID" name="userID" required>
+        <br>
+
+        <label for="referenceCode">
+            Reference Code : 
+        </label>
+        <input type="text" id="referenceCode" name="referenceCode" required>
+        <br>
+
+        <label for="email">
+            Email ID : 
+        </label>
+        <input type="text" id="email" name="email" required>
+        <span class="icon" id="emailIcon"></span>
+        <br>
+
+        <label for="dropDown1">
+            Country : 
+        </label>
+        <select name="dropDown1" id="dropDown1" required>
+            <option value="" disabled selected>
+                Select an Option
+            </option>
+            <option value="South Africa">
+                South Africa
+            </option>
+            <option value="Japan">
+                Japan
+            </option>
+            <option value="Israel">
+                Israel
+            </option>
+        </select>
+        <br>
+
+        <label for="dropDown2">
+            State/Province : 
+        </label>
+        <select name="dropDown2" id="dropDown2" required>
+            <option value="" disabled selected>
+                Select an Option
+            </option>
+            <option value="Northern Cape">
+                Northern Cape
+            </option>
+            <option value="Gauteng">
+                Gauteng
+            </option>
+            <option value="Western Cape">
+                Western Cape
+            </option>
+        </select>
+        <br>
+
+        <label for="dropDown3">
+            City :
+        </label>
+        <select name="dropDown3" id="dropDown3" required>
+            <option value="" disabled selected>
+                Select an Option
+            </option>
+            <option value="Kimberly">
+                Kimberly
+            </option>
+            <option value="Johannesburg">
+                Johannesburg
+            </option>
+            <option value="Cape Town">
+                Cape Town
+            </option>
+        </select>
+
+        <button type="button" onclick="validateForm()">
+            Submit
+        </button>
+    </form>
+    <div id="sectionsResults" style="display: none;">
+        <h2>
+            Summary of Information : 
+        </h2>
+        <p id="firstNameSummary"></p>
+        <p id="lastNameSummary"></p>
+        <p id="userIDSummary"></p>
+        <p id="referenceCodeSummary"></p>
+        <p id="emailSummary"></p>
+        <p id="dropDown1Summary"></p>
+        <p id="dropDown2Summary"></p>
+        <p id="dropDown3Summary"></p>
+    </div>        
+    <button type="button" onclick="ResetForm()">
+        Reset
+    </button>
+</body>
+</html>
