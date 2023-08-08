@@ -1,0 +1,124 @@
+body
+{
+    background-color: aliceblue;
+}
+
+form
+{
+    width: 750px;
+    height: 500px;
+    margin: auto;
+    margin-top: 200px;
+    padding: 20px;
+    border-radius: 34px;
+    border: 2px solid black;
+    background-color: white;
+    color: grey;
+    font-family: Arial;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
+.invalid
+{
+    border: 1px solid red;
+}
+h1
+{
+color:deepskyblue;
+font-size: 20px;
+display: flex;
+font-weight: 500;
+margin-left: 70px;
+margin-top: 40px;
+font-style: normal;
+font-family:'Arial';
+}
+
+.change
+{
+    padding-left: 5px;
+    border-top: 2px;
+    margin-top: 10px;
+}
+body
+{
+    align-content: center;
+}
+input
+{
+width: 40%;
+height: 25px;
+margin: 2px;
+background-color: white;
+border: none;
+border-bottom: 1px solid black;
+}
+input:focus
+{
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+
+
+.sidenav
+{
+    height: 100%;
+    width: 150px;
+    position:fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color:deepskyblue;
+    overflow-x: hidden;
+}
+.main
+{
+    margin-left: 70px;
+    margin-top: 50px;
+    gap: 20px;
+    padding: 0px 10px;
+}
+label
+{
+    margin-left: 0px;
+}
+.sidebyside
+{
+    
+    display: flex;
+    gap: 21em;
+}
+
+.sidebysideinput1
+{
+    width: 80%;
+    display: flex;
+    gap: 3em;
+}
+
+.sidebysideinput2
+{
+    width: 80%;
+    display: flex;
+    gap: 1.5em;
+}
+
+button
+{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 500px;
+background-color: deepskyblue;
+color: white;
+width: 100px;
+height: 29px;
+border-color: deepskyblue;
+border-radius: 10px;
+
+
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Form Assignment
+    </title>
+    <script src="Script.js"></script>
+    <link rel="stylesheet" href="Validate.css">
+</head>
+<body>
+    
+    <div class="change">
+    <form id="WPR271Form">
+        <div class="sidenav">
+        </div>
+        <h1>Basic Details</h1>
+        <div class="main">
+        
+        <div class="sidebyside">
+        <label for="firstName">
+            First Name  
+        </label>
+        <label for="lastName">
+            Last Name 
+        </label>
+        </div>
+        <br>
+        <div class="sidebysideinput1">
+        <input type="text" id="firstName" name="firstName" required pattern="[A-Za-z]+" title="Leters Only">
+        
+        <input type="text" id="lastName" name="lastName" required pattern="[A-Za-z]+" title="Leters Only">
+        </div>
+        <br>
+
+       
+        <div class="sidebyside">
+        <label for="email">
+            Email ID 
+        </label>
+        <label for="userID">
+            Your User ID 
+          </label>
+        </div>
+        <br>
+        <div class="sidebysideinput2">
+        <input type="text" id="email" name="email" required>
+        <span class="icon" id="emailIcon"></span>
+        
+        <input type="text" id="userID" name="userID" required>
+        </div>
+        <br>
+        
+       
+        <label for="dropDown1">
+            Country  
+        </label>
+        <label for="dropDown2">
+            State/Province 
+        </label>
+        <label for="dropDown3">
+            City 
+        </label>
+        <br>
+        <select name="dropDown1" id="dropDown1" required>
+            <option value="" disabled selected>
+                Select an Option
+            </option>
+            <option value="option1">
+                South Africa
+            </option>
+            <option value="option2">
+                Japan
+            </option>
+            <option value="option3">
+                Israel
+            </option>
+        </select>
+        
+       
+        <select name="dropDown2" id="dropDown2" required>
+            <option value="" disabled selected>
+                Select an Option
+            </option>
+            <option value="option4">
+                Northern Cape
+            </option>
+            <option value="option5">
+                Gauteng
+            </option>
+            <option value="option6">
+                Western Cape
+            </option>
+        </select>
+        
+        <select name="dropDown3" id="dropDown3" required>
+            <option value="" disabled selected>
+                Select an Option
+            </option>
+            <option value="option7">
+                Kimberly
+            </option>
+            <option value="option8">
+                Johannesburg
+            </option>
+            <option value="option9">
+                Cape Town
+            </option>
+        </select>
+        <br>
+          
+        <div class="sidebyside">
+        <label for="phoneNumber">
+            Phone Number
+          </label>
+          <label for="referenceCode">
+            Reference Code  
+        </label>
+        </div>
+          <br>
+          <div class="sidebyside2">
+          <input type="text" id="phoneNumber" name="phoneNumber" required>
+    
+        <input type="text" id="referenceCode" name="referenceCode" required>
+        </div>
+        <button type="button" onclick="validateForm()">
+            
+            Continue
+        </button>
+    </div>
+    </div>
+    </form>
+    
+    <div id="sectionsResults" style="display: none;">
+        <h2>
+            Summary of Information : 
+        </h2>
+        <p id="firstNameSummary"></p>
+        <p id="lastNameSummary"></p>
+        <p id="userIDSummary"></p>
+        <p id="referenceCodeSummary"></p>
+        <p id="emailSummary"></p>
+        <p id="dropDown1Summary"></p>
+        <p id="dropDown2Summary"></p>
+        <p id="dropDown3Summary"></p>
+    </div>
+    
+</body>
+</html>
