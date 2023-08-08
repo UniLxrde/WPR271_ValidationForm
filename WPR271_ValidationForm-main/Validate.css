@@ -1,17 +1,18 @@
 body
 {
-    background-color: aliceblue;
+    background-color: white;
 }
 
 form
 {
-    width: 750px;
+    width: 1000px;
     height: 500px;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 300px;
+    margin-left: 100px;
     padding: 20px;
     border-radius: 34px;
-    border: 2px solid black;
+    border: none;
     background-color: white;
     color: grey;
     font-family: Arial;
@@ -29,10 +30,10 @@ form
 h1
 {
 color:deepskyblue;
-font-size: 20px;
+font-size: 25px;
 display: flex;
-font-weight: 500;
-margin-left: 70px;
+font-weight: 600;
+margin-left: 80px;
 margin-top: 40px;
 font-style: normal;
 font-family:'Arial';
@@ -48,6 +49,7 @@ body
 {
     align-content: center;
 }
+/*
 input
 {
 width: 40%;
@@ -55,8 +57,10 @@ height: 25px;
 margin: 2px;
 background-color: white;
 border: none;
-border-bottom: 1px solid black;
+border-bottom: 1px solid grey;
+opacity: 30%;
 }
+*/
 input:focus
 {
     border: none;
@@ -87,18 +91,43 @@ label
 {
     margin-left: 0px;
 }
+/*
 .sidebyside
 {
     
     display: flex;
-    gap: 21em;
+    gap: 20em;
 }
+
+.sidebyside2
+{
+    
+    display: flex;
+    gap: 21.2em;
+}
+.sidebyside3
+{
+    display: flex;
+    gap: 21.3em;
+}
+.sidebyside31
+{
+    display: flex;
+    gap: 2em;
+}
+
+.sidebyside4
+{
+    display: flex;
+    gap: 18em;
+}
+*/
 
 .sidebysideinput1
 {
     width: 80%;
     display: flex;
-    gap: 3em;
+    gap: 2em;
 }
 
 .sidebysideinput2
@@ -108,17 +137,129 @@ label
     gap: 1.5em;
 }
 
-button
+.sidebysideinput3
+{
+    width: 50%;
+    display: flex;
+    gap: 15.3em;
+}
+.sidebysideinput4
+{
+    width: 80%;
+    
+    display: flex;
+    gap: 2.4em;
+}
+
+.end
 {
     display: flex;
+    gap: 2.9em;
+}
+
+
+.Reincarnation button
+{
+    display: fixed;
+    background-color: white;
     margin-top: 50px;
-    margin-left: 500px;
+    margin-left: 0px;
+    width: 100px;
+    color: gray;
+    opacity: 40%;
+height: 0px;
+border-color: transparent;
+border-radius: 0px;
+}
+
+.Continue button
+{
+display: fixed;
+margin-top: 50px;
+margin-left: 400px;
 background-color: deepskyblue;
 color: white;
 width: 100px;
-height: 29px;
+height: 35px;
 border-color: deepskyblue;
-border-radius: 10px;
-
+border-radius: 20px;
 
 }
+
+select
+{
+    height: 25px;
+    margin: 2px;
+   
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid grey;
+    opacity: 50%;
+}
+/*Imaginary*/
+.form-group
+{
+    position: relative;
+    padding: 20px 0;
+    width: 60%;
+    max-width: 100%;
+
+}
+
+.form-group input
+{
+background-color: transparent;
+width: 90%;
+height: 30px;
+margin: 2px;
+background-color: white;
+border: none;
+border-bottom: 1px solid grey;
+bottom: 0;
+opacity: 50%;
+}
+
+.form-group label
+{
+color: gray;
+opacity: 30%;
+font-size: 20px;
+font-weight: 100;
+position: absolute;
+pointer-events: none;
+top: 0;
+transform: translateY(30px);
+transition: all 0.2s ease-in-out;
+left: 0px;
+}
+
+.form-group input:valid,
+.form-group input:focus 
+{
+  
+border-bottom-color:deepskyblue;
+outline:none;
+}
+
+.form-group input:valid + label,
+.form-group input:focus + label
+{
+    color:deepskyblue;
+    font-size: 15px;
+    font-weight: 600;
+    transform: translateY(0);
+}
+
+.box
+{
+    border: none;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    height: 300px;
+    width: 628px;
+  
+}
+
+
+
+

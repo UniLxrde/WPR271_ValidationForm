@@ -17,55 +17,38 @@
         </div>
         <h1>Basic Details</h1>
         <div class="main">
-        
-        <div class="sidebyside">
-        <label for="firstName">
-            First Name  
-        </label>
-        <label for="lastName">
-            Last Name 
-        </label>
-        </div>
-        <br>
+        <div class="box">
         <div class="sidebysideinput1">
+            <div class="form-group">
         <input type="text" id="firstName" name="firstName" required pattern="[A-Za-z]+" title="Leters Only">
+        <label>First Name</label>
+            </div>
         
+        <div class="form-group">
         <input type="text" id="lastName" name="lastName" required pattern="[A-Za-z]+" title="Leters Only">
-        </div>
-        <br>
-
-       
-        <div class="sidebyside">
-        <label for="email">
-            Email ID 
-        </label>
-        <label for="userID">
-            Your User ID 
-          </label>
-        </div>
+        <label>Last Name</label>
+    </div>
+    </div>
+        
         <br>
         <div class="sidebysideinput2">
+        <div class="form-group">
         <input type="text" id="email" name="email" required>
+        <label>Email ID</label>
         <span class="icon" id="emailIcon"></span>
-        
-        <input type="text" id="userID" name="userID" required>
         </div>
+        <div class="form-group">
+        <input type="text" id="userID" name="userID" required>
+        <label>Your User ID</label>
+    </div>
+    </div>
         <br>
         
-       
-        <label for="dropDown1">
-            Country  
-        </label>
-        <label for="dropDown2">
-            State/Province 
-        </label>
-        <label for="dropDown3">
-            City 
-        </label>
-        <br>
+        <div class="sidebysideinput3">
+     
         <select name="dropDown1" id="dropDown1" required>
             <option value="" disabled selected>
-                Select an Option
+               Country
             </option>
             <option value="option1">
                 South Africa
@@ -81,7 +64,7 @@
        
         <select name="dropDown2" id="dropDown2" required>
             <option value="" disabled selected>
-                Select an Option
+               State
             </option>
             <option value="option4">
                 Northern Cape
@@ -96,7 +79,7 @@
         
         <select name="dropDown3" id="dropDown3" required>
             <option value="" disabled selected>
-                Select an Option
+                City
             </option>
             <option value="option7">
                 Kimberly
@@ -108,26 +91,34 @@
                 Cape Town
             </option>
         </select>
+        </div>
         <br>
           
-        <div class="sidebyside">
-        <label for="phoneNumber">
-            Phone Number
-          </label>
-          <label for="referenceCode">
-            Reference Code  
-        </label>
-        </div>
-          <br>
-          <div class="sidebyside2">
+          <div class="sidebysideinput4">
+                <div class="form-group">
           <input type="text" id="phoneNumber" name="phoneNumber" required>
-    
-        <input type="text" id="referenceCode" name="referenceCode" required>
+        <label>Phone Number</label>
         </div>
+        <div class="form-group">
+        <input type="text" id="referenceCode" name="referenceCode" required>
+        <label>Reference Code</label>
+    </div>
+    </div>
+    </div>
+    <div class="end">
+    <div class="Reincarnation">
+    <button type="button" onclick="ResetForm()">
+            Reset All
+     </button>
+    </div>
+    <div class="Continue">
         <button type="button" onclick="validateForm()">
             
             Continue
         </button>
+    </div>
+        
+</div>
     </div>
     </div>
     </form>
