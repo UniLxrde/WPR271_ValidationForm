@@ -1,0 +1,338 @@
+body
+{
+    background-color: white;
+}
+
+form
+{
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    margin-top: 200px;
+    margin-left: 100px;
+    padding: 20px;
+    border-radius: 34px;
+    border: none;
+    background-color: white;
+    color: grey;
+    font-family: Arial;
+    font-size: 5px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
+.invalid
+{
+    border: 1px solid red;
+}
+h1
+{
+color:deepskyblue;
+font-size: 20px;
+display: flex;
+font-weight: 550;
+margin-left: 80px;
+margin-top: 40px;
+font-style: normal;
+font-family:'Arial';
+}
+
+.change
+{
+    padding-left: 5px;
+    border-top: 2px;
+    margin-top: 10px;
+}
+body
+{
+    align-content: center;
+}
+/*
+input
+{
+width: 40%;
+height: 25px;
+margin: 2px;
+background-color: white;
+border: none;
+border-bottom: 1px solid grey;
+opacity: 30%;
+}
+*/
+input:focus
+{
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+
+
+.sidenav
+{
+    height: 100%;
+    width: 150px;
+    position:fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color:deepskyblue;
+    overflow-x: hidden;
+}
+.main
+{
+    margin-left: 70px;
+    margin-top: 50px;
+    gap: 20px;
+    padding: 0px 10px;
+}
+label
+{
+    margin-left: 0px;
+}
+/*
+.sidebyside
+{
+    
+    display: flex;
+    gap: 20em;
+}
+
+.sidebyside2
+{
+    
+    display: flex;
+    gap: 21.2em;
+}
+.sidebyside3
+{
+    display: flex;
+    gap: 21.3em;
+}
+.sidebyside31
+{
+    display: flex;
+    gap: 2em;
+}
+
+.sidebyside4
+{
+    display: flex;
+    gap: 18em;
+}
+*/
+
+.sidebysideinput1
+{
+    width: 80%;
+    display: flex;
+    gap: 2em;
+}
+
+.sidebysideinput2
+{
+    margin-top: -20px;
+    width: 80%;
+    display: flex;
+    gap: 1.5em;
+}
+
+.sidebysideinput3
+{
+    
+    display: flex;
+    gap: 3.6em;
+}
+
+.sidebysideinput4
+{
+    width: 80%;
+    
+    display: flex;
+    gap: 1.5em;
+}
+
+.end
+{
+    display: flex;
+    gap: 2.9em;
+}
+
+
+.Reincarnation button
+{
+    display: fixed;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: -15px;
+    width: 100px;
+    color: gray;
+    opacity: 40%;
+height: 0px;
+border-color: transparent;
+border-radius: 0px;
+}
+
+.Continue button
+{
+display: fixed;
+margin-top: 40px;
+margin-left: 275px;
+background-color: deepskyblue;
+color: white;
+width: 100px;
+height: 35px;
+border-color: deepskyblue;
+border-radius: 20px;
+
+}
+
+select
+{
+    height: 25px;
+    margin: 2px;
+   
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid gainsboro;
+    opacity: 50%;
+}
+/*Imaginary*/
+.form-group
+{
+    position: relative;
+    padding: 20px 0;
+    width: 60%;
+    max-width: 100%;
+
+}
+
+.form-group input
+{
+background-color: transparent;
+width: 90%;
+height: 30px;
+margin: 2px;
+background-color: white;
+border: none;
+border-bottom: 1px solid gainsboro;
+bottom: 0;
+opacity: 50%;
+}
+
+.form-group label
+{
+color: gray;
+opacity: 30%;
+font-size: 15px;
+font-weight: 100;
+position: absolute;
+pointer-events: none;
+top: 0;
+transform: translateY(30px);
+transition: all 0.2s ease-in-out;
+left: 0px;
+}
+
+.form-group input:valid,
+.form-group input:focus 
+{
+  
+border-bottom-color:deepskyblue;
+outline:none;
+}
+
+.form-group input:valid + label,
+.form-group input:focus + label
+{
+    color:deepskyblue;
+    font-size: 15px;
+    font-weight: 600;
+    transform: translateY(0);
+}
+
+.box
+{
+    border: none;
+    height: 300px;
+    width: 620px;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    
+  
+}
+
+.dropCountry
+{
+    border: none;
+}
+
+.dropState
+{
+border-color: grey;
+
+}
+
+option
+{
+    width: 500px;
+}
+
+#country
+{
+    width:223px;
+    display: inline;
+    color: gray;
+    opacity: 50%;
+    font-size: 15px;
+}
+
+section
+{
+    width: 10px;
+    display: flex;
+    gap: 0em;
+    color: gray;
+
+    border-bottom: gray;
+
+}
+
+#dropDown3
+{
+    color: gray;
+    opacity: 50%;
+    width: 93px;
+    display: flex;
+    margin-left: 110px; 
+    font-size: 15px;
+    
+}
+
+#stateProvince
+{
+    color: gray;
+    opacity: 50%;
+    margin-left: 12px;
+    width: 115px;
+    font-size: 15px;
+}
+
+#userID
+{
+    background-image: url("./images/png-clipart-computer-icons-lock-padlock-technic-computer-icons.png");
+   position: right;
+    background-position: 208px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+#emailIcon input:valid
+{
+    background-image: url("./images/360_F_441018492_sxYkLfi1FtyfTxQRPSiFZfLXb2UhyvC3.jpg");
+    position: right;
+     background-position: 208px;
+     background-size: 15px;
+     background-repeat: no-repeat;
+}
