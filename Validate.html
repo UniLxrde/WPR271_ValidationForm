@@ -1,69 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         Form Assignment
     </title>
     <script src="Script.js"></script>
+    <link rel="stylesheet" href="Validate.css">
 </head>
 <body>
+    
+    <div class="change">
     <form id="WPR271Form">
-        <label for="firstName">
-            First Name : 
-        </label>
+        <div class="sidenav">
+        </div>
+        <h1>Basic Details</h1>
+        <div class="main">
+        <div class="box">
+        <div class="sidebysideinput1">
+            <div class="form-group">
         <input type="text" id="firstName" name="firstName" required pattern="[A-Za-z]+" title="Leters Only">
-        <br>
-
-        <label for="lastName">
-            Last Name :
-        </label>
+        <label>First Name</label>
+            </div>
+        
+        <div class="form-group">
         <input type="text" id="lastName" name="lastName" required pattern="[A-Za-z]+" title="Leters Only">
+        <label>Last Name</label>
+    </div>
+    </div>
+        
         <br>
-
-        <label for="userID">
-            User ID :
-        </label>
-        <input type="text" id="userID" name="userID" required>
-        <br>
-
-        <label for="referenceCode">
-            Reference Code : 
-        </label>
-        <input type="text" id="referenceCode" name="referenceCode" required>
-        <br>
-
-        <label for="email">
-            Email ID : 
-        </label>
+        <div class="sidebysideinput2">
+        <div class="form-group">
+        <div class="emailIcon">
         <input type="text" id="email" name="email" required>
+        <label>Email ID</label>
         <span class="icon" id="emailIcon"></span>
+        </div>
+        </div>
+        <div class="form-group">
+        <input type="text" id="userID" name="userID" required>
+        <label>Your User ID</label>
+    </div>
+    </div>
         <br>
-
-        <label for="dropDown1">
-            Country : 
-        </label>
-        <select name="dropDown1" id="dropDown1" required>
+        
+        <div class="sidebysideinput3">
+        <div class="dropCountry">
+            
+        <select name="dropDown1" id="country" required>
             <option value="" disabled selected>
-                Select an Option
+               Country
             </option>
-            <option value="South Africa">
-                South Africa
-            </option>
-            <option value="Japan">
-                Japan
-            </option>
-            <option value="Israel">
-                Israel
-            </option>
+            <option value="Israel">Israel</option>
+            <option value="South Africa">South Africa</option>
+            <option value="USA">USA</option>
+            <option value="Greece">Greece</option>
+            <option value="France">France</option>
         </select>
-        <br>
-
-        <label for="dropDown2">
-            State/Province : 
-        </label>
-        <select name="dropDown2" id="dropDown2" required>
+    </div>
+      
+       <div class="dropState">
+        <section>
+        <select name="dropDown2" id="stateProvince" required>
             <option value="" disabled selected>
-                Select an Option
+               State
             </option>
             <option value="Northern Cape">
                 Northern Cape
@@ -74,15 +76,35 @@
             <option value="Western Cape">
                 Western Cape
             </option>
+            <option value="Yerushalayim">
+                Yerushalayim
+            </option>
+            <option value="HaDarma">
+                Ashkalon
+            </option>
+            <option value="Tel-Aviv Yafo">
+                Tel-Aviv Yafo
+            </option>
+            <option value="Negev">
+                Negev
+            </option>
+            <option value="New York">
+                New York
+            </option>
+            <option value="California">
+                California
+            </option>
+            <option value="Attica">
+                Attica
+            </option>
+            <option value="France d`Metropolotan">
+                Paris
+            </option>
         </select>
-        <br>
-
-        <label for="dropDown3">
-            City :
-        </label>
+    </div>
         <select name="dropDown3" id="dropDown3" required>
             <option value="" disabled selected>
-                Select an Option
+                City
             </option>
             <option value="Kimberly">
                 Kimberly
@@ -93,12 +115,65 @@
             <option value="Cape Town">
                 Cape Town
             </option>
+            <option value="Jerusalem">
+                Jerusalem
+            </option>
+            <option value="Tel-Aviv">
+                Tel-Aviv
+            </option>
+            <option value="Jaffa">
+                Jaffa
+            </option>
+            <option value="Eilat">
+                Eilat
+            </option>
+            <option value="New York City">
+                New York City
+            </option>
+            <option value="Los Angeles">
+                Los Angeles
+            </option>
+            <option value="Athens">
+                Athens
+            </option>
+            <option value="Paris">
+                Paris
+            </option>
         </select>
-
+        </div>
+    </section>
+    
+        <br>
+          
+          <div class="sidebysideinput4">
+                <div class="form-group">
+          <input type="text" id="phoneNumber" name="phoneNumber" required>
+        <label>Phone Number</label>
+        </div>
+        <div class="form-group">
+        <input type="text" id="referenceCode" name="referenceCode" required>
+        <label>Reference Code</label>
+    </div>
+    </div>
+    </div>
+    <div class="end">
+    <div class="Reincarnation">
+    <button type="button" onclick="ResetForm()">
+            Reset All
+     </button>
+    </div>
+    <div class="Continue">
         <button type="button" onclick="validateForm()">
-            Submit
+            
+            Continue
         </button>
+    </div>
+        
+</div>
+    </div>
+    </div>
     </form>
+    
     <div id="sectionsResults" style="display: none;">
         <h2>
             Summary of Information : 
@@ -111,9 +186,10 @@
         <p id="dropDown1Summary"></p>
         <p id="dropDown2Summary"></p>
         <p id="dropDown3Summary"></p>
-    </div>        
-    <button type="button" onclick="ResetForm()">
-        Reset
-    </button>
+    </div>
+    <footer style="text-align: center; margin-top: 20px;">
+        &copy; Cerberus
+    </footer>
+    
 </body>
 </html>

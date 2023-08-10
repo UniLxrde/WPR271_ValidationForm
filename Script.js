@@ -6,8 +6,8 @@ function validateForm()
     var userID = document.getElementById("userID").value;
     var referenceCode = document.getElementById("referenceCode").value;
     var email = document.getElementById("email").value;
-    var dropDown1 = document.getElementById("dropDown1").value;
-    var dropDown2 = document.getElementById("dropDown2").value;
+    var dropDown1 = document.getElementById("country").value;
+    var dropDown2 = document.getElementById("stateProvince").value;
     var dropDown3 = document.getElementById("dropDown3").value;
 
     //Validation for First & Last Name, letters only
